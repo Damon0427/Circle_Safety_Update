@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA11DD452F89BC35001662E6 /* screenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = AA11DD442F89BC35001662E6 /* screenShot.png */; };
 		AABB3FCD2F85AC3700810F2D /* Circle_Safety_MapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB3FCC2F85AC3700810F2D /* Circle_Safety_MapApp.swift */; };
 		AABB3FD12F85AC3900810F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AABB3FD02F85AC3900810F2D /* Assets.xcassets */; };
 		AABB3FD42F85AC3900810F2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AABB3FD32F85AC3900810F2D /* Preview Assets.xcassets */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA11DD412F89BABE001662E6 /* example.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.webp; sourceTree = "<group>"; };
+		AA11DD442F89BC35001662E6 /* screenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenShot.png; sourceTree = "<group>"; };
 		AABB3FC92F85AC3600810F2D /* Circle_Safety_Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Circle_Safety_Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AABB3FCC2F85AC3700810F2D /* Circle_Safety_MapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle_Safety_MapApp.swift; sourceTree = "<group>"; };
 		AABB3FCE2F85AC3700810F2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA11DD402F89BA6B001662E6 /* Asserts */ = {
+			isa = PBXGroup;
+			children = (
+				AA11DD442F89BC35001662E6 /* screenShot.png */,
+				AA11DD412F89BABE001662E6 /* example.webp */,
+			);
+			path = Asserts;
+			sourceTree = "<group>";
+		};
 		AABB3FC02F85AC3600810F2D = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +73,7 @@
 		AABB3FCB2F85AC3600810F2D /* Circle_Safety_Map */ = {
 			isa = PBXGroup;
 			children = (
+				AA11DD402F89BA6B001662E6 /* Asserts */,
 				AABB3FE32F8722E000810F2D /* View */,
 				AABB3FDE2F87214200810F2D /* Models */,
 				AABB3FCC2F85AC3700810F2D /* Circle_Safety_MapApp.swift */,
@@ -157,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AABB3FD42F85AC3900810F2D /* Preview Assets.xcassets in Resources */,
+				AA11DD452F89BC35001662E6 /* screenShot.png in Resources */,
 				AABB3FD12F85AC3900810F2D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
