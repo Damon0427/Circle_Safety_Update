@@ -22,7 +22,7 @@ Instead of relying only on emergency SOS alerts, this feature introduces a **lig
 
 ## Screenshots
 
-  <img src="Asserts/screenShot.jpg" width="200" height="400" style="border-radius: 8px;"/>
+  <img src="Circle_Safety_Map/Circle_Safety_Map/Asserts/screenshot.png" width="200" height="400" style="border-radius: 8px;"/>
 
 
 
