@@ -13,7 +13,9 @@
 		AABB3FDA2F85AF5100810F2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB3FCE2F85AC3700810F2D /* ContentView.swift */; };
 		AABB3FDC2F871B9900810F2D /* locationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB3FDB2F871B9900810F2D /* locationManager.swift */; };
 		AABB3FE02F87216200810F2D /* SafetyUpdateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB3FDF2F87216200810F2D /* SafetyUpdateType.swift */; };
-		AABB3FE22F8721DB00810F2D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB3FE12F8721DB00810F2D /* File.swift */; };
+		AABB3FE22F8721DB00810F2D /* SafetyUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB3FE12F8721DB00810F2D /* SafetyUpdate.swift */; };
+		AABB3FE52F8722ED00810F2D /* AddUpdateSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB3FE42F8722ED00810F2D /* AddUpdateSheet.swift */; };
+		AABB3FE72F8723E800810F2D /* UpdateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB3FE62F8723E800810F2D /* UpdateCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +26,9 @@
 		AABB3FD32F85AC3900810F2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AABB3FDB2F871B9900810F2D /* locationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationManager.swift; sourceTree = "<group>"; };
 		AABB3FDF2F87216200810F2D /* SafetyUpdateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyUpdateType.swift; sourceTree = "<group>"; };
-		AABB3FE12F8721DB00810F2D /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		AABB3FE12F8721DB00810F2D /* SafetyUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyUpdate.swift; sourceTree = "<group>"; };
+		AABB3FE42F8722ED00810F2D /* AddUpdateSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateSheet.swift; sourceTree = "<group>"; };
+		AABB3FE62F8723E800810F2D /* UpdateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,8 @@
 		AABB3FCB2F85AC3600810F2D /* Circle_Safety_Map */ = {
 			isa = PBXGroup;
 			children = (
-				AABB3FDE2F87214200810F2D /* New Group */,
+				AABB3FE32F8722E000810F2D /* View */,
+				AABB3FDE2F87214200810F2D /* Models */,
 				AABB3FCC2F85AC3700810F2D /* Circle_Safety_MapApp.swift */,
 				AABB3FCE2F85AC3700810F2D /* ContentView.swift */,
 				AABB3FD02F85AC3900810F2D /* Assets.xcassets */,
@@ -75,13 +80,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AABB3FDE2F87214200810F2D /* New Group */ = {
+		AABB3FDE2F87214200810F2D /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				AABB3FDF2F87216200810F2D /* SafetyUpdateType.swift */,
-				AABB3FE12F8721DB00810F2D /* File.swift */,
+				AABB3FE12F8721DB00810F2D /* SafetyUpdate.swift */,
 			);
-			path = "New Group";
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AABB3FE32F8722E000810F2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AABB3FE42F8722ED00810F2D /* AddUpdateSheet.swift */,
+				AABB3FE62F8723E800810F2D /* UpdateCard.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AABB3FE22F8721DB00810F2D /* File.swift in Sources */,
+				AABB3FE22F8721DB00810F2D /* SafetyUpdate.swift in Sources */,
+				AABB3FE72F8723E800810F2D /* UpdateCard.swift in Sources */,
 				AABB3FDA2F85AF5100810F2D /* ContentView.swift in Sources */,
+				AABB3FE52F8722ED00810F2D /* AddUpdateSheet.swift in Sources */,
 				AABB3FCD2F85AC3700810F2D /* Circle_Safety_MapApp.swift in Sources */,
 				AABB3FE02F87216200810F2D /* SafetyUpdateType.swift in Sources */,
 				AABB3FDC2F871B9900810F2D /* locationManager.swift in Sources */,
@@ -296,7 +312,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show your position on the safety map";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show your position";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,7 +344,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show your position on the safety map";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show your position";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
